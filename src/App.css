@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url('./assets/bg-intro-desktop.png');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Intro {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Intro h1 {
+  color: hsl(0, 0%, 98%);
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Intro p {
+  color: hsl(0, 0%, 98%);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40%;
+}
+
+.signup-form-title {
+  padding: 20px 60px;
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  color: hsl(0, 0%, 98%);
+  border-radius: 12px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.grayish-blue {
+  color: hsl(246, 25%, 77%);
+}
+
+.signup-form-inner {
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 0px 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: hsl(249, 10%, 26%);
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 2px solid hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-container {
+  width: 100%;
+}
+
+.error-container {
+  text-align: right;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: hsl(0, 100%, 74%);
+}
+
+.signup-btn {
+  text-align: center;
+  background-color: hsl(154, 59%, 51%);
+  width: 100%;
+  padding: 20px;
+  color: hsl(0, 0%, 98%);
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.agreement {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 20px;
+  color: hsl(246, 25%, 77%);
+}
+
+.terms-and-services {
+  color: hsl(0, 100%, 74%);
 }
