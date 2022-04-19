@@ -19,7 +19,7 @@ const SignupComponent = () => {
     error: null,
   });
 
-  const isPresent = (value) => value.length > 0;
+  const isPresent = (value) => value.trim().length > 0;
   const isValidEmail = (value) => {
     const pattern = /^([a-zA-Z]|[0-9]|[._])+@[a-z]+[.][a-z]{2,3}$/;
     return pattern.test(value);
