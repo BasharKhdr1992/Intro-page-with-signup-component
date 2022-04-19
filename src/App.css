@@ -112,3 +112,28 @@ input {
 .terms-and-services {
   color: hsl(0, 100%, 74%);
 }
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Intro {
+    width: 70%;
+  }
+
+  .signup-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Intro {
+    width: 90%;
+  }
+
+  .signup-form {
+    width: 90%;
+  }
+}
